@@ -1,7 +1,7 @@
 /*!
  * Add-on for including ChatGPT into your CKEditor 4
- * Developer: TextareaAI
- * Website: https://textarea.ai/
+ * Developer: Txt42
+ * Website: https://txt42.ai/
  * License: GPL v3
  */
 
@@ -12,7 +12,7 @@
 //   1. Copy the plugin as "ckeditor/plugins/chat-gpt/plugin.js"
 //   2. Add "chat-gpt" into "extraPlugins" config option
 //   3. See configuration samples on our GitHub page:
-//      https://github.com/edsdk/textareaai-ckeditor
+//      https://github.com/edsdk/txt42-ckeditor
 //
 
 var apiKey = CKEDITOR.config.apiKey;
@@ -52,7 +52,7 @@ function getCookie(name) {
         return null;
 }
 window.CKEDITOR_OVERRIDE_API_KEY_PARAM = "OVERRIDE_API_KEY";
-apiKey = getCookie("N1ED_APIKEY") || window.OVERRIDE_API_KEY || apiKey || window.N1ED_API_KEY || "TXAIDFLT";
+apiKey = getCookie("N1ED_APIKEY") || window.OVERRIDE_API_KEY || apiKey || window.N1ED_API_KEY || "TXAIAUTO";
 n1edHttps = (getCookie("N1ED_HTTPS") === "false" || n1edHttps === false) ? false : true;
 n1edPrefix = getCookie("N1ED_PREFIX") || n1edPrefix || null;
 n1edHttpsApp = (getCookie("N1ED_HTTPS_APP") === "false" || n1edHttpsApp === false) ? false : true;
@@ -72,7 +72,7 @@ var urlPlugin = (
     urlCache ? (urlCache + apiKey + "/" + version) : (protocol + "://" + host + "/cdn/" + apiKey + "/" + version)
 ) + "/ckeditor/plugins/N1EDEco/plugin.js";
 
-let oldScriptLoaderLoad = window.CKEDITOR.scriptLoader.load;
+var oldScriptLoaderLoad = window.CKEDITOR.scriptLoader.load;
 window.CKEDITOR.scriptLoader.load = function(scriptUrl, callback, scope, showBusy) {
     return oldScriptLoaderLoad.apply(scope, [
         scriptUrl,
