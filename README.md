@@ -1,24 +1,24 @@
 <p align="center">
-    <a href="https://textarea.ai/"><img src="https://textarea.ai/img/favicons/logo-90.png" alt="Textarea.AI" width="90" /></a>
+    <a href="https://txt42.ai/"><img src="https://txt42.ai/img/favicons/logo-90.png" alt="Txt42" width="90" /></a>
 </p>
 
-<h1 align="center" style="margin-top:-20px">Textarea.AI</h1>
+<h1 align="center" style="margin-top:-20px">Txt42</h1>
 
 <p align="center">
     <strong>ChatGPT plugin for CKEditor 4 for fast copyrighting and writing texts with AI. </strong>
 </p>
 
 <p align="center">
-    <a href="https://textarea.ai/">Home page</a> ∙ <a href="https://textarea.ai/doc/install-chat-gpt-ckeditor-4-plugin/">Install</a> ∙ <a href="https://codepen.io/textarea-ai/pen/mdQEOJE">Try Online</a>
+    <a href="https://txt42.ai/">Home page</a> ∙ <a href="https://txt42.ai/doc/install-chat-gpt-ckeditor-4-plugin/">Install</a> ∙ <a href="https://codepen.io/txt42/pen/mdQEOJE">Try Online</a>
 </p>
 
-[textareaai.webm](https://github.com/edsdk/textareaai-ckeditor/assets/47594816/db99630d-bb92-406e-9662-54edf83c13b1)
+[txt42.webm](https://github.com/edsdk/txt42-ckeditor/assets/47594816/db99630d-bb92-406e-9662-54edf83c13b1)
 
 ## Intro
 
 This is a **ChatGPT plugin for CKEditor 4**. It can help to generate texts with AI and publish it on your website.
 
-If you have already installed and use [N1ED](https://n1ed.com) plugin, please do not install this one: ChatGPT is included into N1ED. Use this Textarea.AI ChatGPT add-on when you need just a GPT features only.
+If you have already installed and use [N1ED](https://n1ed.com) plugin, please do not install this one: ChatGPT is included into N1ED. Use this Txt42 ChatGPT add-on when you need just a GPT features only.
 
 ### Main features:
 
@@ -29,7 +29,7 @@ If you have already installed and use [N1ED](https://n1ed.com) plugin, please do
 
 ## Installation
 
-[Download ChatGPT plugin](https://textarea.ai/download/chat-gpt-ckeditor.zip)
+[Download ChatGPT plugin](https://txt42.ai/download/chat-gpt-ckeditor.zip)
 
 Copy `chat-gpt` directory into `ckeditor/plugins/`.
 You will have such file path as result: `ckeditor/plugins/chat-gpt/plugin.js`.
@@ -38,10 +38,7 @@ You will have such file path as result: `ckeditor/plugins/chat-gpt/plugin.js`.
 Add these line into your "config.js" file to activate the plugin and new buttons:
 ```js
 config.extraPlugins = "chat-gpt";
-config.apiKey = "TXAIDFLT"; // Default key. Get own: https://textarea.ai/dashboard
-config.toolbar = [
-    { name: 'standard', items: ['TextareaAI', 'TextareaAILess', 'TextareaAIMore', '-', 'Bold', 'Italic', '-', 'Link', 'Unlink', '-', '-', 'FontSize', 'Format', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'] },
-];
+config.apiKey = "TXAIAUTO"; // Default key. Get own: https://txt42.ai/dashboard
 ```
 
 ### If you use initialization script
@@ -51,17 +48,14 @@ CKEDITOR.replace(
   "#editor",
   {
      extraPlugins: "chat-gpt",
-     apiKey: "TXAIDFLT", // Default key. Get own: https://textarea.ai/dashboard
-     toolbar: [
-        { name: 'standard', items: ['TextareaAI', 'TextareaAILess', 'TextareaAIMore', '-', 'Bold', 'Italic', '-', 'Link', 'Unlink', '-', '-', 'FontSize', 'Format', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'] },
-     ],
+     apiKey: "TXAIAUTO", // Default key. Get own: https://txt42.ai/dashboard
   }
 );
 ```
 
 ## Configuration
 
-Please check that you switched the plugin to use your API key, you can get it here: [https://textarea.ai/dashboard](Dashboard).
+Please check that you switched the plugin to use your API key, you can get it here: [https://txt42.ai/dashboard](Dashboard).
 
 ## Support
 
