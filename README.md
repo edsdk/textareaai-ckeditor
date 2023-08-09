@@ -12,7 +12,7 @@
     <a href="https://txt42.ai/">Home page</a> ∙ <a href="https://txt42.ai/doc/install-chat-gpt-ckeditor-4-plugin/">Install</a> ∙ <a href="https://codepen.io/txt42/pen/mdQEOJE">Try Online</a>
 </p>
 
-[txt42.webm](https://github.com/edsdk/txt42-ckeditor/assets/47594816/db99630d-bb92-406e-9662-54edf83c13b1)
+[txt42.webm](https://github.com/edsdk/txt42-ckeditor/assets/39118405/e33fbb40-6d3a-4d1b-882b-ab95e94d8868)
 
 ## Intro
 
