@@ -55,8 +55,8 @@ CKEDITOR.replace(
 
 ## Configuration
 
-Please check that you switched the plugin to use your API key, you can get it here: [https://txt42.ai/dashboard](Dashboard).
+Please check that you switched the plugin to use your API key, you can get it here: [Dashboard](https://txt42.ai/dashboard).
 
 ## Support
 
-Please do not hesitate to ask any questions regarding installation or using sending a letter to [support e-mail](support@helpdesk.edsdk.com).
+Please do not hesitate to ask any questions regarding installation or using sending a letter to [support e-mail](mailto:support@helpdesk.edsdk.com).
